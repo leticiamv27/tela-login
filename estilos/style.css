@@ -30,12 +30,12 @@ section#login {
     border-radius: 20px;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%;    
     overflow: hidden; /*tudo fora da borda fica escondido. Antes de por a foto estava arredondado */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.52) ;
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease; /*suaviza animação */
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -86,11 +86,11 @@ div.campo > input {
     background-color: #51b0ad;
     font-size: 1em;
     height: 100%;
-    width: calc(100% - 44px);
-    transform: translateY(-11px);
+    width: calc(100% - 44px);    
     border: 0px;
     border-radius: 8px;
     padding: 4px;
+    transform: translateY(-11px); /*quando tiver animação, transformação, ideal como úlltima linha do seletor, para não dar incompatibilidade */
 }
 
 div.campo > input:focus-within {
